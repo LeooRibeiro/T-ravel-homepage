@@ -1,0 +1,482 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header {
+  height: 130px;
+  max-height: 150px;
+  margin: 50px auto 0px auto;
+  padding: 2rem;
+  border-radius: 20px 20px 0px 0px;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h3 {
+  font-size: 2.5rem;
+  margin-left: 110px;
+  color: #333333;
+}
+header h3 span {
+  font-size: 4.5rem;
+  color: #333333;
+}
+header nav {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 40% 20%;
+  grid-template-rows: auto;
+  justify-content: end;
+  align-items: center;
+  gap: 70px;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+header li a {
+  display: inline-block;
+  font-size: 1rem;
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+header li a:hover::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #3777d4;
+  position: absolute;
+}
+header .btn__nav {
+  background: #3777d4;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: 500;
+  margin-right: 0px;
+  transition: 0.25s;
+}
+header .btn__nav:hover {
+  box-shadow: 0px 0px 5px #043988;
+  text-shadow: 0px 0px 5px #043988;
+  transition: 0.25s;
+}
+
+.slider {
+  height: 650px;
+  margin: 0px auto;
+  padding: 2rem;
+  background: url(/img/paul-szewczyk-cC00u0v4FR8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.slider .content__slider {
+  margin-left: 110px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10px 70px 100px;
+  align-items: center;
+}
+.slider .content__slider h4 {
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 10px #043988;
+}
+.slider .content__slider h1 {
+  font-size: 3.5rem;
+  color: #f1f1f1;
+  text-shadow: 0px 0px 10px #043988;
+}
+.slider .content__slider .searchbar {
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+.slider .content__slider .searchbar input {
+  width: 600px;
+  border-radius: 30px 0px 0px 30px;
+  border: none;
+  padding-left: 15px;
+}
+.slider .content__slider .searchbar input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  font-weight: 500;
+  box-shadow: 0px 0px 10px #043988;
+}
+.slider .content__slider .searchbar button {
+  width: 70px;
+  border: none;
+  border-radius: 0px 30px 30px 0px;
+  background: #3777d4;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.slider .content__slider p {
+  color: #f1f1f1;
+  text-shadow: 0px 0px 10px #043988;
+}
+
+main {
+  height: 2200px;
+  margin: 0 auto;
+  background: #f1f1f1;
+}
+main h2 {
+  font-size: 2.5rem;
+  padding: 40px 0px 0px 130px;
+}
+main .content__card__promotions {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 70px 0px 0px 50px;
+}
+main .content__card__promotions .card {
+  width: 300px;
+  background: white;
+  padding: 0.4em;
+  border-radius: 6px;
+  transition: 0.25s;
+}
+main .content__card__promotions .card:hover {
+  box-shadow: 0px 0px 10px #71baff;
+  transition: 0.25s;
+}
+main .content__card__promotions .card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 250px;
+  border-radius: 6px 6px 0 0;
+}
+main .content__card__promotions .category {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 0px 7px 0;
+}
+main .content__card__promotions .heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+main .content__card__promotions .heading:hover {
+  cursor: pointer;
+}
+main .content__card__promotions .buy {
+  display: flex;
+  padding: 0px 20px 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .content__card__promotions .author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+main .content__card__promotions .name {
+  font-weight: 600;
+}
+main .content__card__promotions .name:hover {
+  cursor: pointer;
+}
+main .content__card__promotions a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #f1f1f1;
+  background: #3777d4;
+  text-decoration: none;
+  transition: 0.25s;
+}
+main .content__card__promotions a:hover {
+  box-shadow: 0px 0px 5px #043988;
+  text-shadow: 0px 0px 5px #043988;
+  transition: 0.25s;
+}
+main .display__intermedium {
+  width: 100%;
+  height: 300px;
+  margin: 150px 0px 80px 0px;
+  background: url(/img/paul-szewczyk-P1yhKnirSHs-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+main .display__intermedium h2 {
+  color: #f1f1f1;
+  font-size: 2.5rem;
+  text-shadow: 0px 0px 10px #043988;
+  margin: 0;
+  padding: 50px 0px 0px 0px;
+}
+main .display__intermedium h3 {
+  margin: 0;
+  padding: 0;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 10px #043988;
+}
+main .display__intermedium input {
+  width: 30%;
+  height: 40px;
+  padding-left: 10px;
+  margin: 50px 0px 0px 0px;
+  border-radius: 30px;
+  border: none;
+}
+main .display__intermedium input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  font-weight: 500;
+  box-shadow: 0px 0px 10px #043988;
+}
+main .travel__family {
+  width: 100%;
+}
+main .travel__family p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 40px;
+}
+main .travel__family .container__combos {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  margin: 70px 0px 0px 100px;
+}
+main .travel__family .card {
+  width: 300px;
+  background: white;
+  padding: 0.4em;
+  border-radius: 6px;
+  transition: 0.25s;
+  margin-top: 30px;
+}
+main .travel__family .card:hover {
+  box-shadow: 0px 0px 10px #71baff;
+  transition: 0.25s;
+}
+main .travel__family .card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 250px;
+  border-radius: 6px 6px 0 0;
+}
+main .travel__family .category {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 0px 7px 0;
+}
+main .travel__family .heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+main .travel__family .heading:hover {
+  cursor: pointer;
+}
+main .travel__family .buy {
+  display: flex;
+  padding: 0px 20px 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .travel__family .author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+main .travel__family .name {
+  font-weight: 600;
+}
+main .travel__family .name:hover {
+  cursor: pointer;
+}
+main .travel__family a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #f1f1f1;
+  background: #3777d4;
+  text-decoration: none;
+  transition: 0.25s;
+}
+main .travel__family a:hover {
+  box-shadow: 0px 0px 5px #043988;
+  text-shadow: 0px 0px 5px #043988;
+  transition: 0.25s;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background: #f1f1f1;
+  padding: 20px;
+}
+footer h2 {
+  font-size: 2rem;
+  padding: 40px 0px 0px 130px;
+}
+footer .content__footer {
+  width: 70%;
+  height: 200px;
+  margin: 40px 0px 0px 110px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .footer-coluna {
+  padding: 0 20px;
+}
+footer .footer-coluna h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+footer .footer-coluna ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-coluna ul li {
+  margin-bottom: 8px;
+}
+footer .footer-coluna ul li a {
+  text-decoration: none;
+}
+footer .redes-sociais {
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  margin: 50px;
+  text-align: center;
+}
+
+.div__avaliations {
+  width: 100%;
+  height: 650px;
+  background: url(/img/paul-szewczyk-P1yhKnirSHs-unsplash.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 5000px;
+}
+.div__avaliations h2 {
+  font-size: 2.5rem;
+  padding: 40px 0px 0px 130px;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 5px #202125;
+}
+.div__avaliations .content__cards {
+  display: flex;
+  gap: 120px;
+  padding-left: 130px;
+  align-items: center;
+  margin: 50px auto;
+}
+.div__avaliations .card {
+  --background: #fff;
+  --cardShadow: rgba(32,33,37,.1);
+  --cardShadowHover: rgba(32,33,37,.06);
+  --cardShadowActive: rgba(32,33,37,.55);
+  --cardBorder: #dbdce0;
+  --cardBorderActive: #1a73e8;
+  --textColor: #202125;
+  --linkColor: #1967d2;
+  --ratingColor: #faab00;
+}
+.div__avaliations .card {
+  width: 250px;
+  height: 350px;
+  background: var(--background);
+  color: var(--textColor);
+  padding: 25px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 40px 70px 150px 10px;
+}
+.div__avaliations .card:hover {
+  box-shadow: 0px 0px 10px #71baff;
+  transition: 0.25s;
+}
+.div__avaliations .card > .icon,
+.div__avaliations .card > .title,
+.div__avaliations .card > .description {
+  margin-bottom: 0.7em;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.div__avaliations .card > .title {
+  margin-top: 1.5em;
+  font-weight: bold;
+}
+.div__avaliations .card > .description {
+  line-height: 1.5em;
+  min-height: 6em;
+}
+.div__avaliations .card > .icon {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+.div__avaliations .card > .rating {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  color: var(--ratingColor);
+  font-weight: bold;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+.div__avaliations .card > .rating:before {
+  content: "☆☆☆☆☆";
+}
+.div__avaliations .card > .rating4:before {
+  content: "☆    ☆☆☆";
+}
+.div__avaliations .card > .rating:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  width: calc(var(--rating) * 1%);
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0;
+  padding: 0px 8rem;
+  box-sizing: border-box;
+  background: url(/img/paul-szewczyk-P1yhKnirSHs-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+}/*# sourceMappingURL=style.css.map */
